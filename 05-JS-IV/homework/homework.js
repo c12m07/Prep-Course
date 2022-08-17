@@ -107,12 +107,7 @@ function pasarUsuarioAPremium (usuarios) {
 }
 
 function sumarLikesDeUsuario (usuario) {
-  // "usuario" tiene una propiedad llamada "posts" que es un array
-  // "posts" es un array de objetos "post"
-  // Cada objeto "post" tiene una propiedad llamada "likes" que es un entero (int/integer)
-  // Suma todos los likes de todos los objetos "post"
-  // Devuelve la suma
-  // Tu código:
+  
   var result = 0;
 
   for (let i = 0; i < usuario.posts.length; i++) {
@@ -123,15 +118,6 @@ function sumarLikesDeUsuario (usuario) {
 }
 
 function agregarMetodoCalculoDescuento (producto) {
-  // Agregar un método (función) al objeto "producto" llamado "calcularPrecioDescuento"
-  // Este método debe multiplicar el "precio" del "producto" ("producto.precio" o "producto[precio]") y "porcentajeDeDescuento" para obtener el descuento
-  // El método resta el descuento del precio y devuelve el precio con descuento
-  // Devuelve el objeto "producto" al final de la función
-  // Ejemplo:
-  // producto.precio -> 20
-  // producto.porcentajeDeDescuento -> 0.2 (o simplemente ".2")
-  // producto.calcularPrecioDescuento() -> 20 - (20 * 0.2)
-  // Tu código:
 
   producto.calcularPrecioDescuento = function(){
     var result = this.precio - (this.precio * this.porcentajeDeDescuento);
