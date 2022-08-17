@@ -150,7 +150,7 @@ describe('agregarAmigo(user, newFriend)', function() {
       amigos: ['Ben', 'Austen', 'Ryan', 'Mike', 'Young'],
     };
     const newFriend = 'Shay';
-    expect(agregarAmigo(user, 'Shay').amigos.pop()).toBe('Shay');
+    expect(user.amigos.pop(agregarAmigo(user, 'Shay'))).toBe('Shay');
   });
 });
 
